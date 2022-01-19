@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const dispatch = useDispatch();
   const userInfo = useSelector((state) => state.userData);
-  const storageColl = localStorage.getItem(StorageName);
   const classes = useStyles();
 
   const logout = () => {
@@ -63,10 +62,7 @@ export default function Home() {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="h4" className={classes.title}>
-                  {userInfo.userCollection.company_name}
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                  {userInfo.userCollection.created_at}
+                  {userInfo.userCollection.full_name}
                 </Typography>
               </Grid>
               <Grid item>

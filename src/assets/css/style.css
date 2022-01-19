@@ -1,5 +1,10 @@
+body {
+  background: #f7f8ff;
+  font-family: Lato,sans-serif;
+}
 .loaderCenter {
   margin: 0;
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;
